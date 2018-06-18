@@ -13,9 +13,6 @@
 
             Dim rf = Split(RfText, "translationResponse"":""") : rf = Split(rf(1), """}")
 
-            Dim tr As New Thread(AddressOf SW) : tr.Start()
-
-
             Return rf(0).Replace("\r\n", vbCrLf)
         Catch ex As Exception
             Return ("Copy any word")
